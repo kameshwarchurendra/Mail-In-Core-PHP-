@@ -32,13 +32,11 @@ function send_mail($name,$mesg,$email,$subject,$headers){
         $mail->isSMTP();                                            // Set mailer to use SMTP
         $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'kameshwarchurendra1995@gmail.com';                 // SMTP username
-        $mail->Password   = 'tmddxfhekzeuabrw';                        // SMTP password
+        $mail->Username   = '##########';                 // SMTP username
+        $mail->Password   = '##############';                        // SMTP password
         $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
         $mail->Port       = 587;                                    // TCP port to connect to
-    
-        // Recipients
-        $mail->setFrom('kameshwarchurendra1995@gmail.com', 'Kameshwar');
+        $mail->setFrom('################', 'Kameshwar');  // Recipients
         $mail->addAddress($email, $name);     // Add a recipient
     
         // Content
